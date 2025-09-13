@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>519展示</title>
+    <style>
+        body {
+            font-family: "楷体", "仿宋", KaiTi, FangSong, sans-serif;
+            background-color: #ffffff;
+            color: #e0e0ff;
+            margin: 0;
+            padding: 20px;
+            background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 6px),
+                              radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
+                              radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(13, 19, 53, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 180, 255, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #f0f3f5;
+            text-shadow: 0 0 10px rgba(0, 3, 5, 0.7);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            letter-spacing: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .planet-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(to right, rgba(118, 122, 165, 0.3), rgba(157, 163, 197, 0.7));
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        
+        .planet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(170, 187, 194, 0.4);
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #031c27;
+            margin-right: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(241, 242, 243, 0.5);
+        }
+        
+        .intro {
+            font-style: italic;
+            color: #a8c3ec;
+            font-size: 1.1em;
+        }
+        
+        .content {
+            padding: 15px;
+            background-color: rgba(26, 35, 126, 0.2);
+            border-radius: 10px;
+            margin-top: 10px;
+            border-left: 3px solid #4fc3f7;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #4fc3f7, transparent);
+            border: none;
+            margin: 25px 0;
+        }
+        
+        .mercury { border-top: 3px solid #a6a6a6; }
+        .venus { border-top: 3px solid #e39e54; }
+        .earth { border-top: 3px solid #64b5f6; }
+        .mars { border-top: 3px solid #ff5252; }
+        .jupiter { border-top: 3px solid #ffb74d; }
+        .saturn { border-top: 3px solid #ffe082; }
+        .uranus { border-top: 3px solid #4dd0e1; }
+        .neptune { border-top: 3px solid #4fc3f7; }
+        
+        .timestamp {
+            text-align: right;
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        .song{
+            font-family: 'Times New Roman', Times, serif;
+            color: #aadcf1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>太阳系行星主页</h1>
+        <img src="https://gips3.baidu.com/it/u=596299530,68469218&fm=3074&app=3074&f=JPEG?w=1607&h=1050&type=normal&func=" alt="八大行星" width="800">
+        <p class="song">因为图片加载原因 部分图片可能无法加载 我们提供了整个太阳系照片以作参考</p>
+        <!-- 水星 -->
+        <div class="planet-card mercury">
+            <div class="profile">
+                <img class="avatar" src="https://assets.iflscience.com/assets/articleNo/67468/aImg/61860/mercury-messenger-oph-20210105-1-1-1-1.png" alt="水星">
+                <div>
+                    <h2>水星</h2>
+                    <p class="intro">无水水星，温差极大，比邻太阳</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>今天又是极端的一天！白天430°C，晚上-180°C，谁能受得了这种温差？ 
+                    还好我没有大气层，不用感受风的折磨。</p>
+                <p class="timestamp">发布于：5分钟前 · 距离太阳0.4个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 金星 -->
+        <div class="planet-card venus">
+            <div class="profile">
+                <img class="avatar" src="https://planetary.s3.amazonaws.com/assets/images/5-venus/20210602_venus_akatsuki_uv_2020-2021.png" alt="金星">
+                <div>
+                    <h2>金星</h2>
+                    <p class="intro">太阳系中最热的行星，有着浓厚的大气层</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>保持平均465°C的温度记录，谁与争锋？ 
+                    压力也是地球的92倍，来我这里做客记得带上特制的防护服~
+                    还有 金星可没有金子哦~
+                </p>
+                <p class="timestamp">发布于：2小时前 · 距离太阳0.7个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 地球 -->
+        <div class="planet-card earth">
+            <div class="profile">
+                <img class="avatar" src="https://cdn.mos.cms.futurecdn.net/3upZx2gXXLpwKJcToMjY6f-1200-80.jpg" alt="地球">
+                <div>
+                    <h2>地球</h2>
+                    <p class="intro">生命的蓝色摇篮，宇宙中的绿洲</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>今天又是生机勃勃的一天 希望他们能好好照顾我的生态环境，最近气温又有点升高了，有点担心</p>
+                <p class="timestamp">发布于：5小时前 · 距离太阳1个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 火星 -->
+        <div class="planet-card mars">
+            <div class="profile">
+                <img class="avatar" src="https://solarsstem.nasa.gov/internal_resources/3458" alt="火星">
+                <div>
+                    <h2>火星</h2>
+                    <p class="intro">红色星球，未来人类殖民的目标之一</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>虽然与木星有一层隔阂 环境也不太好 但是我还是期待有一天能见到人类定居在这里的场面</p>
+                <p class="timestamp">发布于：8小时前 · 距离太阳1.5个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 木星 -->
+        <div class="planet-card jupiter">
+            <div class="profile">
+                <img class="avatar" src="https://solarsytem.nasa.gov/internal_resources/3463" alt="木星">
+                <div>
+                    <h2>木星</h2>
+                    <p class="intro">太阳系最大的行星，有着著名的大红斑</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>风暴还在持续，大红斑已经存在几百年了，堪称太阳系最持久的天气系统！ 最近又吸引了几个小卫星加入我的大家庭，现在已经有79个了！</p>
+                <p class="timestamp">发布于：1天前 · 距离太阳5.2个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 土星 -->
+        <div class="planet-card saturn">
+            <div class="profile">
+                <img class="avatar" src="https://solarystem.nasa.gov/internal_resources/3465" alt="土星">
+                <div>
+                    <h2>土星</h2>
+                    <p class="intro">拥有美丽光环的气态巨行星</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>谁说只有外表重要？我的光环虽然美丽，但也在慢慢消失... 预计还有1亿年左右，且看且珍惜！另外，我的密度比水还小，如果能找到足够大的游泳池，我就可以游泳了～</p>
+                <p class="timestamp">发布于：2天前 · 距离太阳9.5个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 天王星 -->
+        <div class="planet-card uranus">
+            <div class="profile">
+                <img class="avatar" src="https://cn.bing.com/images/search?view=detailV2&ccid=v6Tg7kj2&id=248A40B5FF916BC4495B4A5201F675557E315F4C&thid=OIP.v6Tg7kj2gXaAhRyjRxaCpgHaEK&mediaurl=https%3A%2F%2Fts1.tc.mm.bing.net%2Fth%2Fid%2FR-C.bfa4e0ee48f6817680851ca3471682a6%3Frik%3DTF8xflV19gFSSg%26riu%3Dhttp%253a%252f%252fwww.uux.cn%252fattachments%252f2022%252f10%252f1_2022100611573812Krx.jpg%26ehk%3D1gTm8QUV4DQVleQ%252b7CDw9MMmG%252b%252bJbT%252fp%252fIv%252bdgs%252fpWU%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=810&expw=1440&q=%E5%A4%A9%E7%8E%8B%E6%98%9F&FORM=IRPRST&ck=DF795DFA853ACEF92937C26AF0877483&selectedIndex=2&itb=0&cw=778&ch=872&ajaxhist=0&ajaxserp=0" alt="天王星">
+                <div>
+                    <h2>天王星</h2>
+                    <p class="intro">侧躺着旋转的冰巨行星</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>为什么大家都嘲笑我侧着转？这只是我的特色！ 一个天王星年相当于84个地球年，所以我有42年的白天和42年的黑夜，很奇特吧~</p>
+                <p class="timestamp">发布于：3天前 · 距离太阳19.2个日地距离</p>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        <!-- 海王星 -->
+        <div class="planet-card neptune">
+            <div class="profile">
+                <img class="avatar" src="https://solarsystem.nasa.gov/internal_resources/3468" alt="海王星">
+                <div>
+                    <h2>海王星</h2>
+                    <p class="intro">太阳系最外侧的行星，有着强烈的风暴系统</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>作为太阳系最远的行星，我经常感到被忽视...但我的风速可达2100km/h，是太阳系中最快的！ 最近发现我的轨道外似乎还有行星，期待新的邻居出现！</p>
+                <p class="timestamp">发布于：1周前 · 距离太阳30.1个日地距离</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
